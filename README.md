@@ -6,7 +6,7 @@
 
 ![Status](https://img.shields.io/badge/Status-In%20Progress-yellow)
 
-# 🏎️ Fuel Burn Framework
+#  Fuel Burn Framework
 
 A modular Python framework for extracting, cleaning and analysing FIA World Endurance Championship (WEC) race timing data to study tyre degradation and long-run performance.
 
@@ -14,7 +14,7 @@ The project converts official FIA timing PDFs into structured lap by lap dataset
 
 ---
 
-## 📸 Example Results
+##  Example Results
 
 ### Combined Tyre Degradation Comparison
 
@@ -51,7 +51,7 @@ These metrics provide quantitative indicators of tyre performance across a race.
 
 ---
 
-# ✨ Features
+#  Features
 
 - Extracts lap timing data directly from FIA WEC PDF timing sheets
 - Converts semi structured timing reports into clean tabular datasets
@@ -64,7 +64,7 @@ These metrics provide quantitative indicators of tyre performance across a race.
 
 ---
 
-# ⚙️ Methodology
+#  Methodology
 
 The framework follows a modular data processing pipeline.
 
@@ -150,7 +150,7 @@ A higher variance ratio indicates increasing lap time inconsistency later in the
 
 ---
 
-# 📂 Project Structure
+#  Project Structure
 
 ```
 Fuel-Burn-Framework/
@@ -178,7 +178,7 @@ Fuel-Burn-Framework/
 
 ---
 
-# 💻 Installation
+#  Installation
 
 Clone the repository.
 
@@ -200,7 +200,7 @@ pip install -r requirements.txt
 
 ---
 
-# ▶️ Usage
+#  Usage
 
 ### Extract lap timing data
 
@@ -232,7 +232,7 @@ The script automatically:
 
 ---
 
-# 🔮 Future Improvements
+#  Future Improvements
 
 Planned extensions include:
 
@@ -245,7 +245,7 @@ Planned extensions include:
 
 ---
 
-# 🛠️ Built With
+#  Built With
 
 - Python
 - Pandas
@@ -256,13 +256,13 @@ Planned extensions include:
 
 ---
 
-# 📄 License
+#  License
 
 This project is released under the MIT License.
 
 ---
 
-# 👤 Author
+#  Author
 
 **Neil Gehlot**
 
