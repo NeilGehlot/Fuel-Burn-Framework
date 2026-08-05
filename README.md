@@ -1,3 +1,11 @@
+![Python](https://img.shields.io/badge/Python-3.13-blue)
+
+![Pandas](https://img.shields.io/badge/Pandas-2.3-green)
+
+![Camelot](https://img.shields.io/badge/Camelot-PDF-orange)
+
+![Status](https://img.shields.io/badge/Status-In%20Progress-yellow)
+
 # 🏎️ Fuel Burn Framework
 
 A modular Python framework for extracting, cleaning and analysing FIA World Endurance Championship (WEC) race timing data to study tyre degradation and long-run performance.

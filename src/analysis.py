@@ -12,6 +12,8 @@ DELTA_MAX = 10
 EARLY_STINT_RATIO  =  0.4
 LATE_STINT_RATIO  =  0.7
 MIN_PLOT_LENGTH = 5
+PROJECT_ROOT  =  Path(__file__).resolve().parent.parent
+
 
 def prepare_stint_data(stint_data):
 
@@ -97,7 +99,6 @@ def  main():
     loads the processed stint data ,analysis
     and then generates visualisations
     """ 
-    PROJECT_ROOT  =  Path(__file__).resolve().parent.parent
 
     DATA  =  PROJECT_ROOT / "data" / "Processed" / "laps.csv"
     laps_df  =  pd.read_csv(DATA)
