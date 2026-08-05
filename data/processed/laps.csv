@@ -1,4 +1,4 @@
-car_no,lap_time,gap,lap_index,lapTimeSeconds
+car_no,lap_time,gap,lap_index,lap_time_seconds
 10,4:22.383,6.244,1,262.383
 10,2:13.427,14.628,2,133.427
 10,2:32.648,21.752,3,152.648
