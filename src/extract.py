@@ -1,6 +1,8 @@
 import pandas as pd 
 from pathlib import Path
-import camelot 
+import camelot
+from utils import lapTime_Seconds
+
 DATA = Path("data/raw/19_AnalysisByLap_Race_Hour_6.PDF")
 
 tables = camelot.read_pdf(
@@ -49,15 +51,6 @@ laps_df["lap_index"] = (
     .cumcount() + 1
 )
 
-def lapTime_Seconds(time):
-    if pd.isna(time):
-        return None
-    parts=str(time).split(':')
-    if len(parts)!=2:
-        return None
-    min=int(parts[0])
-    sec=float(parts[1])
-    return min*60+sec
 
 laps_df["lapTimeSeconds"]=laps_df['lap_time'].apply(lapTime_Seconds)
 
