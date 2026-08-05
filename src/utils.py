@@ -1,10 +1,20 @@
+"""
+Utility function used across fuel burn framework 
+"""
 import pandas as pd 
-def lapTime_Seconds(time):
-    if pd.isna(time):
+
+
+def lap_time_seconds(lap_time):
+    """
+    Converting Lap times strings into total seconds per lap 
+    """
+    if pd.isna(lap_time):
         return None
-    parts=str(time).split(':')
-    if len(parts)!=2:
+    
+    parts = str(lap_time).split(':')
+    if len(parts) != 2:
         return None
-    min=int(parts[0])
-    sec=float(parts[1])
-    return min*60+sec
+    
+    minutes = int(parts[0])
+    seconds = float(parts[1])
+    return minutes*60+seconds

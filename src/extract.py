@@ -1,7 +1,7 @@
-import pandas as pd 
 from pathlib import Path
+import pandas as pd 
 import camelot
-from utils import lapTime_Seconds
+from utils import lap_time_seconds
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 RAW_DATA = PROJECT_ROOT / "data" / "raw" / "19_AnalysisByLap_Race_Hour_6.PDF"
@@ -72,7 +72,7 @@ def clean_lap_data(blocks):
         .groupby("car_no")
         .cumcount() + 1
     )
-    laps_df["lap_time_seconds"] = laps_df['lap_time'].apply(lapTime_Seconds)
+    laps_df["lap_time_seconds"] = laps_df['lap_time'].apply(lap_time_seconds)
 
     return laps_df
 
@@ -98,5 +98,7 @@ def main():
     laps_df = clean_lap_data(blocks)
     save_processed_file(laps_df)
     print(f"Saved {len(laps_df)} laps to {OUTPUT_FILE}")
+
+
 if __name__  == '__main__':
     main()
